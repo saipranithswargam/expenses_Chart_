@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(33, 100%, 98%);
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+}
+.container{
+    width:50vh;
+    margin-top: 3%;
+    background-color: #fff;
+    border:2px solid hsl(27, 66%, 92%);
+    border-radius: 7px;
+    padding: 4%;
+    box-shadow: 10px 5px 5px slategray;
+    margin-bottom: 6%;
+}
+hr{
+    display: inline-block;
+}
+h1{
+    font-size: large;
+    text-align: left;
+    margin-top: 3%;
+}
+.bal p{
+    font-size: small;
+
+}
+.bal{
+    display: flex;
+    background-color: hsl(10, 79%, 65%);
+    justify-content: space-between;
+    padding: 4%;
+    border-radius: 7px;
+    color:#fff;
+    box-shadow: 8px 3px 3px slategray;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.ani p,.container h1{
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.ani h1,.ani-b p{
+    animation-delay: 100ms;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.bal img,.ani-c p{
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.ani-c h3{
+    animation-delay: 100ms;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes moveInLeft{ 
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        opacity: 0.9;
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        opacity: 0.9;
+        transform: translate(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes blink{
+     0%{
+        opacity: 0;
+     }
+     50%{
+        opacity: 0.5;;
+     }
+     60%{
+        opacity: 0;
+     }
+     70%{
+        opacity: 0.6;
+     }
+     80%{
+        opacity: 0;
+     }
+     90%{
+        opacity: 0.7;
+     }
+     95%{
+        opacity: 0;
+     }
+     100%{
+        opacity: 1;
+     }
+     
+}
