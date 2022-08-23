@@ -48,7 +48,7 @@ const myChart = new Chart(ctx, {
             },
         },
         plugins:{legend: {
-            display: false
+            display: false,
         }},
         responsive:true,
         maintainAspectRatio: true,
